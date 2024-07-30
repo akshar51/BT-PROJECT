@@ -5,5 +5,19 @@
 }
 
 body{
-    font-family: 'Jost' !important;
+    /* font-family: 'Jost' !important; */
 }
+
+
+
+/* NAVBAR */
+
+nav ul li:last-child {
+    border-color: #5758e0 !important;
+}
+
+nav ul li:last-child:hover{
+    background-image: linear-gradient(to right, rgb(203, 13, 241), rgb(166, 1, 255));
+    color: white;
+}
+
