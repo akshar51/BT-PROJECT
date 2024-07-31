@@ -17,7 +17,41 @@ nav ul li:last-child {
 }
 
 nav ul li:last-child:hover{
-    background-image: linear-gradient(to right, rgb(203, 13, 241), rgb(166, 1, 255));
+    background: linear-gradient(to left, #55b4d4, #5758e0);
     color: white;
 }
 
+
+/* CAROUSEL */
+
+.carousel-item {
+
+    background: url(../Img/slider.jpg), rgba(0, 0, 0, 0.8);
+    padding: 110px 0px;
+    background-blend-mode: color-burn;
+    background-size: cover;
+}
+
+.carousel-item .container h2{
+    width: 65%;
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    background-clip: text;
+    color: transparent;
+}
+
+.carousel-item .container a{
+    background-color: #5758e0;
+}
+
+
+.carousel-item .container a:hover{
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+}
+
+
+.carousel-control-next-icon{
+    border: 1px solid #fefefe;
+    padding: 26px;
+    border-radius: 50%;
+    background-color: grey;
+}
