@@ -10,7 +10,7 @@ body{
 
 
 
-/* NAVBAR */
+/* N  A  V  B  A  R   */
 
 nav ul li:last-child {
     border-color: #5758e0 !important;
@@ -22,7 +22,10 @@ nav ul li:last-child:hover{
 }
 
 
-/* CAROUSEL */
+
+
+
+/* C  A  R  O  U  S  E  L */
 
 .carousel-item {
 
@@ -49,9 +52,88 @@ nav ul li:last-child:hover{
 }
 
 
+.carousel-control-prev-icon,
 .carousel-control-next-icon{
-    border: 1px solid #fefefe;
-    padding: 26px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: rgb(99, 93, 93) !important;
+    color: black!important;
+}
+
+
+
+
+/* S  E  R  V  I  C  E */
+
+.service{
+    padding: 100px 0px;
+}
+
+.service .col-4:first-child .service-item a::before{
+    content: "";
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+}
+
+
+.service .col-4:last-child .service-item a::before{
+    content: "";
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+}
+
+.service .container .row .col-4 .service-item a :first-child{
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* A  B  O  U  T */
+
+.about{
+    padding: 90px 0px;
+    background-color: #191919;
+}
+
+
+.about-content span{
+    display:inline-block;
+    height: 5px;
+    width: 90px;
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    margin-bottom: 10px;
+}
+
+
+
+/*  P  L  A  N  N  I  N  G  */
+
+.planning{
+    padding: 120px 0px;
+}
+
+.planning-content span{
+    display:inline-block;
+    height: 5px;
+    width: 90px;
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    margin-bottom: 10px;
+}
+
+.planning-item i{
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
 }
