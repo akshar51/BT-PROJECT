@@ -98,13 +98,14 @@ nav ul li:last-child:hover{
 }
 
 .service .container .row .col-4 .service-item {
-    transition: all 0.4s ease;
+    transition: linear;
     cursor: pointer;
 }
 
 .service .container .row .col-4  .service-item:hover{
     background: linear-gradient(to left, #55b4d4, #5758e0);
     transform: translateY(-10px);
+    transition: all 0.5s ease;
 }
 
 .service .container .row .col-4 .service-item:hover p{
@@ -116,10 +117,12 @@ nav ul li:last-child:hover{
 }
 
 .service .col-4:first-child:hover .service-item a::before{
-    display: none;
-    
+    opacity: 0;  
 }
 
+.service .col-4:last-child:hover .service-item a::before{
+    opacity: 0;  
+}
 
 
 
@@ -173,3 +176,33 @@ nav ul li:last-child:hover{
     padding: 90px 0px;
 }
 
+
+
+
+
+/*  P  O  R  T  F  O  L  I  O  */
+
+.portfolio{
+    background-color: #111111;
+    padding: 90px 0px;
+}
+
+.portfolio-img img{
+    height: 420px;
+}
+
+.portfolio-content{
+    background: linear-gradient(to left,#55b4d489,#3b5388a5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-img:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.portfolio-img:hover .portfolio-content{
+    opacity: 1;
+}   
