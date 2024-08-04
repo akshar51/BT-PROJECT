@@ -194,7 +194,7 @@ nav ul li:last-child:hover{
 .portfolio-content{
     background: linear-gradient(to left,#55b4d489,#3b5388a5);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .portfolio-img:hover{
@@ -206,3 +206,42 @@ nav ul li:last-child:hover{
 .portfolio-img:hover .portfolio-content{
     opacity: 1;
 }   
+
+
+
+/*   V  I  D  E  O */
+
+
+.video{
+    background-color: #191919;
+    padding: 90px 0px;
+}
+
+
+.video-inner .video-content{
+    background-image: url(../Img/Video-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+
+.video-inner .video-content a i{
+    font-size: 100px;
+    background: linear-gradient(to left,#54b7d8,#537dd8);
+    background-clip: text;
+    color:transparent;
+    
+  
+}
+.video-inner:hover .video-content a{
+    scale: 1.4;
+    transition: all 0.3s;
+}
+
+.video-inner .video-content:hover{
+    filter: brightness(0.9) contrast(1.2);
+    transition: all 0.3s;
+}
+
