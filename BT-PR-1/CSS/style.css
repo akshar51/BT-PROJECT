@@ -10,7 +10,7 @@ body{
 
 
 
-/* N  A  V  B  A  R   */
+/*-------------------------- N  A  V  B  A  R ---------------------  */
 
 nav ul li:last-child {
     border-color: #5758e0 !important;
@@ -21,11 +21,15 @@ nav ul li:last-child:hover{
     color: white;
 }
 
+nav ul li:not(:last-child) a:hover {
+    color:#5758e0 !important;
+}
 
 
 
 
-/* C  A  R  O  U  S  E  L */
+
+/*----------------------- C  A  R  O  U  S  E  L -------------------*/
 
 .carousel-item {
 
@@ -62,7 +66,7 @@ nav ul li:last-child:hover{
 
 
 
-/* S  E  R  V  I  C  E */
+/*--------------------- S  E  R  V  I  C  E -----------------------*/
 
 .service{
     padding: 100px 0px;
@@ -77,6 +81,7 @@ nav ul li:last-child:hover{
     top: -20px;
     left: -20px;
     z-index: -1;
+    
 }
 
 
@@ -89,6 +94,7 @@ nav ul li:last-child:hover{
     bottom: -20px;
     right: -20px;
     z-index: -1;
+   
 }
 
 .service .container .row .col-4 .service-item a :first-child{
@@ -97,10 +103,11 @@ nav ul li:last-child:hover{
     color: transparent;
 }
 
-.service .container .row .col-4 .service-item {
+.service .container .row .col-4 .service-item{
     transition: linear;
     cursor: pointer;
 }
+
 
 .service .container .row .col-4  .service-item:hover{
     background: linear-gradient(to left, #55b4d4, #5758e0);
@@ -118,17 +125,19 @@ nav ul li:last-child:hover{
 
 .service .col-4:first-child:hover .service-item a::before{
     opacity: 0;  
+    
 }
 
 .service .col-4:last-child:hover .service-item a::before{
-    opacity: 0;  
+    opacity: 0; 
+    
 }
 
 
 
 
 
-/* A  B  O  U  T */
+/*----------------------- A  B  O  U  T --------------------------*/
 
 .about{
     padding: 90px 0px;
@@ -170,7 +179,7 @@ nav ul li:last-child:hover{
 
 
 
-/*  F  E  A  T  U  R  E  S */
+/*--------------------------  F  E  A  T  U  R  E  S ----------------------*/
 
 .features{
     padding: 90px 0px;
@@ -180,7 +189,7 @@ nav ul li:last-child:hover{
 
 
 
-/*  P  O  R  T  F  O  L  I  O  */
+/*------------------------  P  O  R  T  F  O  L  I  O  ----------------------*/
 
 .portfolio{
     background-color: #111111;
@@ -209,7 +218,7 @@ nav ul li:last-child:hover{
 
 
 
-/*   V  I  D  E  O */
+/*---------------------------   V  I  D  E  O --------------------------------*/
 
 
 .video{
@@ -224,6 +233,7 @@ nav ul li:last-child:hover{
     background-position: center;
     background-repeat: no-repeat;
     height: 420px;
+    
 }
 
 
@@ -233,15 +243,73 @@ nav ul li:last-child:hover{
     background-clip: text;
     color:transparent;
     
-  
 }
+
 .video-inner:hover .video-content a{
     scale: 1.4;
-    transition: all 0.3s;
+    transition: 0.5s ease-in-out;
 }
 
 .video-inner .video-content:hover{
     filter: brightness(0.9) contrast(1.2);
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
+
+
+
+/*--------------------------  T  E  S  T  I  M  O  N  I  A  L  --------------------- */
+
+
+.testimonial{
+    padding: 90px 0px;
+}
+
+
+.testimonial-item{
+    transition: 0.3s ease;
+}
+
+.testimonial-item:hover{
+    background: linear-gradient(to left,#54b7d8,#4172da);
+    transform: translateY(-10px);
+}
+
+.testimonial-item:hover .testimonial-img>p{
+    color: white !important;
+}
+.testimonial-item:hover .testimonial-img a>i{
+    color: white !important;
+}
+
+
+.testimonial-item .testimonial-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-item .testimonial-img a i{
+    background-image: linear-gradient(to left,#54b7d8,#537dd8);
+    background-clip: text;
+    color: transparent;
+}
+
+
+/*----------------------  F  O  R  M --------------------------*/
+
+.form .container .row .col-6 .form-content span{
+    display:inline-block;
+    height: 5px;
+    width: 90px;
+    background-image: linear-gradient(to left,#55b4d4,#577dd1);
+    margin-bottom: 10px;
+}
+
+
+.form .container .row .col-6 .form-input ul li :last-child{
+    background-color: #5758e0;
+}
+
+.form-input input::placeholder{
+    color: white;  
+}
