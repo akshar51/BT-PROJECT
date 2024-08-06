@@ -72,7 +72,7 @@ nav ul li:not(:last-child) a:hover {
     padding: 100px 0px;
 }
 
-.service .col-4:first-child .service-item a::before{
+.service .col-lg-4:first-child .service-item a::before{
     content: "";
     width: 80%;
     height: 60%;
@@ -85,7 +85,7 @@ nav ul li:not(:last-child) a:hover {
 }
 
 
-.service .col-4:last-child .service-item a::before{
+.service .col-lg-4:last-child .service-item a::before{
     content: "";
     width: 80%;
     height: 60%;
@@ -97,38 +97,38 @@ nav ul li:not(:last-child) a:hover {
    
 }
 
-.service .container .row .col-4 .service-item a :first-child{
+.service .container .row .col-lg-4 .service-item a :first-child{
     background-image: linear-gradient(to left,#55b4d4,#577dd1);
     background-clip: text;
     color: transparent;
 }
 
-.service .container .row .col-4 .service-item{
+.service .container .row .col-lg-4 .service-item{
     transition: linear;
     cursor: pointer;
 }
 
 
-.service .container .row .col-4  .service-item:hover{
+.service .container .row .col-lg-4  .service-item:hover{
     background: linear-gradient(to left, #55b4d4, #5758e0);
     transform: translateY(-10px);
     transition: all 0.5s ease;
 }
 
-.service .container .row .col-4 .service-item:hover p{
+.service .container .row .col-lg-4 .service-item:hover p{
     color: white !important;
 }
 
-.service .container .row .col-4 .service-item:hover i{
+.service .container .row .col-lg-4 .service-item:hover i{
     color: white !important;
 }
 
-.service .col-4:first-child:hover .service-item a::before{
+.service .col-lg-4:first-child:hover .service-item a::before{
     opacity: 0;  
     
 }
 
-.service .col-4:last-child:hover .service-item a::before{
+.service .col-lg-4:last-child:hover .service-item a::before{
     opacity: 0; 
     
 }
@@ -297,7 +297,7 @@ nav ul li:not(:last-child) a:hover {
 
 /*----------------------  F  O  R  M --------------------------*/
 
-.form .container .row .col-6 .form-content span{
+.form .container .row .col-lg-6 .form-content span{
     display:inline-block;
     height: 5px;
     width: 90px;
@@ -306,10 +306,33 @@ nav ul li:not(:last-child) a:hover {
 }
 
 
-.form .container .row .col-6 .form-input ul li :last-child{
+.form .container .row .col-lg-6 .form-input ul li :last-child{
     background-color: #5758e0;
 }
 
 .form-input input::placeholder{
     color: white;  
 }
+
+
+/*   C  O   N   T   A   C   T    */
+
+.contact{
+    padding: 90px 0px;
+}
+
+.contact .container .row:first-child .contact-item a::before{
+    content: "";
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+    top: -20px;
+    left: -20px;
+    z-index: -1;    
+}
+
+.contact .col-lg-4:first-child:hover .contact-item a::before{
+    opacity: 0;  
+}
+
