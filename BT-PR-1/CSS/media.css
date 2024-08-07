@@ -1,0 +1,36 @@
+@media (min-width:576px){
+
+/* FEATURE */
+.feature-title p{
+    width: 90%;
+}
+
+}
+
+
+@media (min-width:768px){
+    
+/* FEATURE */
+.feature-title p{
+    width: 100%;
+}
+
+
+}
+
+
+@media (min-width: 992px){
+
+    
+}
+
+
+
+@media (min-width:1200px){
+    
+}
+
+
+@media (min-width:1400px){
+    
+}

@@ -109,7 +109,7 @@ nav ul li:not(:last-child) a:hover {
 }
 
 
-.service .container .row .col-lg-4  .service-item:hover{
+.service .container .row .col-lg-4 .service-item:hover{
     background: linear-gradient(to left, #55b4d4, #5758e0);
     transform: translateY(-10px);
     transition: all 0.5s ease;
@@ -296,6 +296,9 @@ nav ul li:not(:last-child) a:hover {
 
 
 /*----------------------  F  O  R  M --------------------------*/
+.form{
+    padding: 60px 0px;
+}
 
 .form .container .row .col-lg-6 .form-content span{
     display:inline-block;
@@ -305,7 +308,6 @@ nav ul li:not(:last-child) a:hover {
     margin-bottom: 10px;
 }
 
-
 .form .container .row .col-lg-6 .form-input ul li :last-child{
     background-color: #5758e0;
 }
@@ -314,14 +316,23 @@ nav ul li:not(:last-child) a:hover {
     color: white;  
 }
 
+.form-input ul li:last-child a:hover{
+    background-color: #faf0f0;
+}
 
-/*   C  O   N   T   A   C   T    */
+
+/*-----------------   C  O   N   T   A   C   T   -------------- */
 
 .contact{
     padding: 90px 0px;
 }
 
-.contact .container .row:first-child .contact-item a::before{
+.contact .container .row .col-lg-4 .contact-item{
+    cursor: pointer;
+    transition: linear;
+}
+
+.contact .container .row .col-lg-4:first-child .contact-item::before{
     content: "";
     width: 80%;
     height: 60%;
@@ -329,10 +340,54 @@ nav ul li:not(:last-child) a:hover {
     background: linear-gradient(to left, #55b4d4, #5758e0);
     top: -20px;
     left: -20px;
-    z-index: -1;    
+    z-index: -1;
+} 
+
+
+.contact .container .row .col-lg-4:first-child:hover .contact-item::before{
+    opacity: 0;
 }
 
-.contact .col-lg-4:first-child:hover .contact-item a::before{
-    opacity: 0;  
+.contact .container .row .col-lg-4:last-child .contact-item::before{
+    content: "";
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+} 
+
+.contact .container .row .col-lg-4:last-child:hover .contact-item::before{
+    opacity: 0;
+}
+
+
+.contact .container .row .col-lg-4 .contact-item:hover{
+    background: linear-gradient(to left, #55b4d4, #5758e0);
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+}
+
+.contact .container .row .col-lg-4 .contact-item:hover p{
+    color: white !important;
+}
+
+.contact .container .row .col-lg-4 .contact-item:hover i{
+    color: white !important;
+}
+
+.contact .container .row .col-lg-4 .contact-item a :first-child{
+    background-image: linear-gradient(to right,#55b4d4,#577dd1);
+    background-clip: text;
+    color: transparent;
+}
+
+
+/*-------------------- F  O  O  T  E  R -----------------------*/
+
+.footer .container .row .col-lg-6 .footer-copy-right p>a{
+    color: #55b4d4;
 }
 
