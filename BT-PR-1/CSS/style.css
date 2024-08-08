@@ -297,10 +297,10 @@ nav ul li:not(:last-child) a:hover {
 
 /*----------------------  F  O  R  M --------------------------*/
 .form{
-    padding: 60px 0px;
+    padding: 70px 0px;
 }
 
-.form .container .row .col-lg-6 .form-content span{
+.form .container .row .col-12 .form-content span{
     display:inline-block;
     height: 5px;
     width: 90px;
@@ -308,7 +308,7 @@ nav ul li:not(:last-child) a:hover {
     margin-bottom: 10px;
 }
 
-.form .container .row .col-lg-6 .form-input ul li :last-child{
+.form .container .row .col-12 .form-input ul li button:last-child{
     background-color: #5758e0;
 }
 
@@ -316,9 +316,11 @@ nav ul li:not(:last-child) a:hover {
     color: white;  
 }
 
-.form-input ul li:last-child a:hover{
-    background-color: #faf0f0;
+ .form-input ul li button:last-child:hover{
+    background-image:linear-gradient(to left,#55b4d4,#577dd1);
 }
+
+
 
 
 /*-----------------   C  O   N   T   A   C   T   -------------- */
@@ -332,7 +334,7 @@ nav ul li:not(:last-child) a:hover {
     transition: linear;
 }
 
-.contact .container .row .col-lg-4:first-child .contact-item::before{
+.contact .container .row .col-12:first-child .contact-item::before{
     content: "";
     width: 80%;
     height: 60%;
@@ -348,7 +350,7 @@ nav ul li:not(:last-child) a:hover {
     opacity: 0;
 }
 
-.contact .container .row .col-lg-4:last-child .contact-item::before{
+.contact .container .row .col-12:last-child .contact-item::before{
     content: "";
     width: 80%;
     height: 60%;
