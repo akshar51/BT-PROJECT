@@ -34,7 +34,7 @@ nav ul li:not(:last-child) a:hover {
 .carousel-item {
 
     background: url(../Img/slider.jpg), rgba(0, 0, 0, 0.8);
-    padding: 110px 0px;
+    padding: 130px 0px;
     background-blend-mode: color-burn;
     background-size: cover;
 }
@@ -216,7 +216,10 @@ nav ul li:not(:last-child) a:hover {
     opacity: 1;
 }   
 
-
+.portfolio-img img{
+    object-fit: cover;
+    object-position: center;
+}
 
 /*---------------------------   V  I  D  E  O --------------------------------*/
 
@@ -318,6 +321,10 @@ nav ul li:not(:last-child) a:hover {
 
  .form-input ul li button:last-child:hover{
     background-image:linear-gradient(to left,#55b4d4,#577dd1);
+}
+
+.form-img .card-img-overlay a{
+    background: linear-gradient(to left,#55b4d4,#577dd1);
 }
 
 
