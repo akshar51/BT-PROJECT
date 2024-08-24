@@ -69,7 +69,7 @@ nav ul li:not(:last-child) a:hover {
 /*--------------------- S  E  R  V  I  C  E -----------------------*/
 
 .service{
-    padding: 100px 0px;
+    padding: 120px 0px;
 }
 
 .service .col-lg-4:first-child .service-item a::before{
